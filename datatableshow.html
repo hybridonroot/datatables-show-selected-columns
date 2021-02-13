@@ -5,13 +5,11 @@
         <title>DataTables example - Select columns</title>
         <link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
-        <link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=2335fc41d55494e8cfce6bcc069c6419">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
         <style type="text/css" class="init">
         
         </style>
-        <script type="text/javascript" src="/media/js/dynamic.php?comments-page=extensions%2Fbuttons%2Fexamples%2Fcolumn_visibility%2Fcolumns.html" async></script>
         <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
@@ -19,23 +17,23 @@
         <script type="text/javascript" class="init">
         
     
-    $(document).ready(function() {
-        $('#example').DataTable( {
-            dom: 'Bfrtip',
-            columnDefs: [
-                {
-                    targets: 1,
-                    className: 'noVis'
-                }
-            ],
-            buttons: [
-                {
-                    extend: 'colvis',
-                    columns: ':not(.noVis)'
-                }
-            ]
-        } );
-    } );
+                $(document).ready(function() {
+                    $('#example').DataTable( {
+                        dom: 'Bfrtip',
+                        columnDefs: [
+                            {
+                                targets: 1,
+                                className: 'noVis'
+                            }
+                        ],
+                        buttons: [
+                            {
+                                extend: 'colvis',
+                                columns: ':not(.noVis)'
+                            }
+                        ]
+                    } );
+                } );
     
     
         </script>
